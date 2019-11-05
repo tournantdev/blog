@@ -1,7 +1,8 @@
 {
-  "name": "hylia",
+  "name": "@tournant/blog",
   "version": "0.5.1",
-  "description": "A simple Eleventy starter kit to help you have a blog of your own",
+  "private": true,
+  "description": "Tournant org blog – based on Hylia",
   "main": "index.js",
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
@@ -39,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hankchizljaw/hylia.git"
+    "url": "git+https://github.com/tournantdev/blog.git"
   },
   "keywords": [],
   "author": "",

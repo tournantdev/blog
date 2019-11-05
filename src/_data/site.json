@@ -1,9 +1,9 @@
 {
   "showThemeCredit": true,
-  "name": "Hylia Starter Kit",
-  "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
-  "url": "https://hylia.website",
-  "authorEmail": "me@andy-bell.design",
+  "name": "Tournant Blog",
+  "shortDesc": "Posts around the development work of Tournant.",
+  "url": "https://blog.tournant.dev",
+  "authorEmail": "team@tournant.dev",
   "authorHandle": "@hankchizljaw",
   "authorName": "Andy Bell",
   "enableThirdPartyComments": false,
