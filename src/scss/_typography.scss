@@ -1,11 +1,72 @@
 /* lora-700 - latin */
 @font-face {
-  font-family: 'Lora';
+  font-family: 'Fabrikat-Light';
+  font-weight: 300;
+  src: url('https://static.tournant.dev/webfonts/30BB69_6_0.eot');
+  src: url('https://static.tournant.dev/webfonts/30BB69_6_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.tournant.dev/webfonts/30BB69_6_0.woff2') format('woff2'),
+    url('https://static.tournant.dev/webfonts/30BB69_6_0.woff') format('woff'),
+    url('https://static.tournant.dev/webfonts/30BB69_6_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fabrikat-LightItalic';
+  font-weight: 300;
+  font-style: italic;
+  src: url('https://static.tournant.dev/webfonts/30BB69_7_0.eot');
+  src: url('https://static.tournant.dev/webfonts/30BB69_7_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.tournant.dev/webfonts/30BB69_7_0.woff2') format('woff2'),
+    url('https://static.tournant.dev/webfonts/30BB69_7_0.woff') format('woff'),
+    url('https://static.tournant.dev/webfonts/30BB69_7_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fabrikat';
+  font-weight: normal;
   font-style: normal;
-  font-weight: 700;
-  src: local('Lora Bold'), local('Lora-Bold'),
-    url('/fonts/lora-v13-latin-700.woff2') format('woff2'),
-    url('/fonts/lora-v13-latin-700.woff') format('woff');
+  src: url('https://static.tournant.dev/webfonts/30BB69_8_0.eot');
+  src: url('https://static.tournant.dev/webfonts/30BB69_8_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.tournant.dev/webfonts/30BB69_8_0.woff2') format('woff2'),
+    url('https://static.tournant.dev/webfonts/30BB69_8_0.woff') format('woff'),
+    url('https://static.tournant.dev/webfonts/30BB69_8_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fabrikat';
+  font-weight: normal;
+  font-style: italic;
+  src: url('https://static.tournant.dev/webfonts/30BB69_9_0.eot');
+  src: url('https://static.tournant.dev/webfonts/30BB69_9_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.tournant.dev/webfonts/30BB69_9_0.woff2') format('woff2'),
+    url('https://static.tournant.dev/webfonts/30BB69_9_0.woff') format('woff'),
+    url('https://static.tournant.dev/webfonts/30BB69_9_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fabrikat';
+  font-weight: bold;
+  src: url('https://static.tournant.dev/webfonts/30BB69_0_0.eot');
+  src: url('https://static.tournant.dev/webfonts/30BB69_0_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.tournant.dev/webfonts/30BB69_0_0.woff2') format('woff2'),
+    url('https://static.tournant.dev/webfonts/30BB69_0_0.woff') format('woff'),
+    url('https://static.tournant.dev/webfonts/30BB69_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fabrikat';
+  font-style: italic;
+  font-weight: bold;
+  src: url('https://static.tournant.dev/webfonts/30BB69_5_0.eot');
+  src: url('https://static.tournant.dev/webfonts/30BB69_5_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.tournant.dev/webfonts/30BB69_5_0.woff2') format('woff2'),
+    url('https://static.tournant.dev/webfonts/30BB69_5_0.woff') format('woff'),
+    url('https://static.tournant.dev/webfonts/30BB69_5_0.ttf') format('truetype');
 }
 
 body {
@@ -14,12 +75,6 @@ body {
   line-height: $line-height / ($line-height * 0 + 1);
 
   @include apply-utility('font', 'base');
-}
-
-h1,
-h2,
-h3 {
-  @include apply-utility('font', 'serif');
 }
 
 h1 {
