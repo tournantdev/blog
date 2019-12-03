@@ -79,7 +79,7 @@
   --clr-bg: var(--alpine-goat);
   --clr-secondary: var(--tournant-color-dark);
   --clr-accent: var(--sea-hunter);
-  --clr-accent-light: var(--sea-hunter);
+  --clr-accent-light: var(--dun-morogh-blue);
 
   --space-1: 2vmin;
   --space-2: 4vmin;
@@ -106,7 +106,7 @@
     --clr-bg: var(--darkgray);
     --clr-secondary: var(--tournant-color-light);
     --clr-accent: var(--dun-morogh-blue);
-    --clr-accent-light: var(--blue-tourmaline);
+    --clr-accent-light: var(--sea-hunter);
     --white: var(--lead);
   }
 
@@ -275,6 +275,27 @@ main :first-child {
   border-bottom: 1px solid var(--lightgray);
   display: flex;
   padding: var(--space-2);
+}
+
+.main-footer {
+  background-color: var(--clr-secondary);
+  border-top: 1px solid var(--white);
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-2);
+  color: var(--clr-bg);
+}
+
+.main-footer > nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-footer > nav a {
+  color: var(--clr-accent-light);
+}
+
+.main-footer > nav a:visited {
+  color: var(--clr-accent-light);
 }
 
 header:after {
