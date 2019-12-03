@@ -9,9 +9,18 @@ templateClass: 'tmpl-post'
   {% endif %}
   <h1 class="main-headline">{{ title }}</h1>
   <p class="post-header__description">{{ description }}</p>
+
 </header>
-<div>
+<div class="post-content">
   {{ content | safe }}
 </div>
+<footer>
+  {% for tag in tags %}
+      {%- if tag != "posts" -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        filed under <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+</footer>
 
 <p><a href="{{ '/' | url }}">← Home</a></p>
