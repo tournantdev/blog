@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+templateClass: 'tmpl-post'
+---
+
+<header class="post-header -spans-full">
+  {% if date %}
+    <small class="post-header__date">posted on <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></small>
+  {% endif %}
+  <h1 class="main-headline">{{ title }}</h1>
+  <p class="post-header__description">{{ description }}</p>
+</header>
+<div>
+  {{ content | safe }}
+</div>
+
+<p><a href="{{ '/' | url }}">← Home</a></p>

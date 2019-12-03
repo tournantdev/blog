@@ -1,0 +1,16 @@
+{
+  "title": "tournant blog",
+  "url": "https://blog.tournant.dev/",
+  "description": "Notes and articles around the development process of Tournant.",
+  "feed": {
+    "subtitle": "Notes and articles around the development process of Tournant.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://blog.tournant.dev/feed/feed.xml",
+    "id": "https://blog.tournant.dev/"
+  },
+  "author": {
+    "name": "Team Tournant",
+    "email": "team@tournant.dev"
+  }
+}
