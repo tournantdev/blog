@@ -1,0 +1,19 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<div>
+  <h1 class="main-headline">Home</h1>
+
+  <h2 class="sub-headline">Latest writings</h2>
+
+  {% set postslist = collections.posts | head(-3) %}
+  {% include "postslist.njk" %}
+
+  {% if postslist.length > 3 %}
+    <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+  {% endif %}
+</div>
