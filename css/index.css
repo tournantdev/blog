@@ -297,6 +297,11 @@ main :first-child {
   color: var(--clr-bg);
 }
 
+.main-footer ::selection {
+  background-color: var(--clr-bg);
+  color: var(--clr-secondary);
+}
+
 .main-footer > nav ul {
   list-style: none;
   padding: 0;
