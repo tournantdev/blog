@@ -5,15 +5,17 @@ eleventyNavigation:
   order: 1
 ---
 
-<div>
-  <h1 class="main-headline">Home</h1>
+<div class="content-home">
+  <h1 class="main-headline -first-col">Home</h1>
+  <section class="-second-col">
+    <p class="post-header__description">Hello there. We are Tournant. We build building blocks for an Inclusive Web.</p>
+    <h2 class="sub-headline">Latest writings</h2>
 
-  <h2 class="sub-headline">Latest writings</h2>
+    {% set postslist = collections.posts | head(-3) %}
+    {% include "postslist.njk" %}
 
-  {% set postslist = collections.posts | head(-3) %}
-  {% include "postslist.njk" %}
-
-  {% if postslist.length > 3 %}
-    <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
-  {% endif %}
+    {% if postslist.length > 3 %}
+      <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+    {% endif %}
+  </section>
 </div>
