@@ -189,9 +189,21 @@ html {
   font-size: 108%;
 }
 
+@media (min-width: 740px) {
+  html {
+    font-size: 114%;
+  }
+}
+
 @media (min-width: 1024px) {
   html {
     font-size: 118%;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 125%;
   }
 }
 
