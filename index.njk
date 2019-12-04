@@ -8,7 +8,7 @@ eleventyNavigation:
 <div>
   <h1 class="main-headline">Home</h1>
 
-  <h2>Latest writings</h2>
+  <h2 class="sub-headline">Latest writings</h2>
 
   {% set postslist = collections.posts | head(-3) %}
   {% include "postslist.njk" %}
