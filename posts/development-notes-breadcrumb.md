@@ -22,7 +22,7 @@ The `nav` element needs to have a label to distinguish it from other navigation 
 
 The last item in the breadcrumb is marked with `aria-current="page"`. Most screen readers will use this to announce that it is, well, the current page. However, linking the last item is not mandatory. If it misses the `to` property, it will be rendered as plain text and not marked.
 
-Please note: At the time of writing `aria-current` is not supported by TalkBack on Android.
+At the time of writing `aria-current` is not supported by TalkBack on Android.
 
 ## Usage Guidelines
 
@@ -78,4 +78,11 @@ If your homepage is not yet part of your Vue implementation, you can modify the 
 ];
 ```
 
-This functionality is provided by the [@tournant/dynamic-anchor](https://www.npmjs.com/package/@tournant/dynamic-anchor) component.
+This functionality is provided by the [@tournant/dynamic-anchor](https://www.npmjs.com/package/@tournant/dynamic-anchor) component. The complications of building this are worthy a post on its own, I will update this post as soon as it is written.
+
+### Microdata
+
+Schema.org compatible [BreadcrumbList microdata](https://schema.org/BreadcrumbList) is embedded into the markup. Hence this breadcrumb is discoverable by third parties and they are able to use this data, e.g. in displaying it in a search results page.
+
+That’s it. Happy crumbling.
+Team Tournant
