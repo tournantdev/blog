@@ -517,7 +517,7 @@ pre {
 }
 
 /* Tags */
-.tag {
+.post-tag {
   background-color: var(--tournant-color-dark);
   border-radius: 0.25em; /* 3px /12 */
   color: var(--clr-bg);
@@ -530,8 +530,8 @@ pre {
   text-transform: uppercase;
   vertical-align: text-top;
 }
-a[href].tag,
-a[href].tag:visited {
+a[href].post-tag,
+a[href].post-tag:visited {
   color: #fff;
 }
 

@@ -5,7 +5,8 @@ templateClass: 'tmpl-post'
 
 <header class="post-header -spans-full">
   {% if date %}
-    <small class="post-header__date">posted on <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></small>
+    <small class="post-header__date">posted on <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    </small>
   {% endif %}
   <h1 class="main-headline">{{ title }}</h1>
   <p class="post-header__description">{{ description }}</p>
@@ -16,11 +17,13 @@ templateClass: 'tmpl-post'
 </div>
 <footer>
   {% for tag in tags %}
-      {%- if tag != "posts" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        filed under <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
+    {%- if tag != "posts" -%}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        filed under <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+    {%- endif -%}
+  {% endfor %}
 </footer>
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<p>
+  <a href="{{ '/' | url }}">← Home</a>
+</p>
