@@ -1,8 +1,8 @@
 ---
 title: "Development Notes: Breadcrumb"
 description: "Usage instructrions for the @tournant/breadcrumb."
-date: 2019-12-04
-tags: meta
+date: 2019-12-05
+tags: dev-notes
 layout: layouts/post.njk
 ---
 
