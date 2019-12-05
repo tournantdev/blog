@@ -314,11 +314,11 @@ main :first-child {
   padding: 0;
 }
 
-.main-footer > nav a {
+.main-footer a {
   color: var(--clr-accent-light);
 }
 
-.main-footer > nav a:visited {
+.main-footer a:visited {
   color: var(--clr-accent-light);
 }
 
