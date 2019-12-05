@@ -84,5 +84,7 @@ This functionality is provided by the [@tournant/dynamic-anchor](https://www.npm
 
 Schema.org compatible [BreadcrumbList microdata](https://schema.org/BreadcrumbList) is embedded into the markup. Hence this breadcrumb is discoverable by third parties and they are able to use this data, e.g. in displaying it in a search results page.
 
+For complete usage instructions, please read the [component package page]((https://www.npmjs.com/package/@tournant/breadcrumb).
+
 That’s it. Happy crumbling.
 Team Tournant
