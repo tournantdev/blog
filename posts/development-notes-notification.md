@@ -36,7 +36,7 @@ As always, you can find exhaustive documentation in the Readme on NPM or GitHub.
 
 But, let’s quickly cover the basics here, as you are reading this.
 
-We decided to make `status` the default role of the component. Why? Because, as nicely put it, developers tend to have an economical behaviour when it comes to reading documentation. We didn’t want to put a component out there and bombard users of assistive technology with alert messages.
+We decided to make `status` the default role of the component. Why? Because, as [Marcus](https://marcus.io/) nicely put it, developers tend to have an economical behaviour when it comes to reading documentation. We didn’t want to put a component out there and bombard users of assistive technology with alert messages.
 
 To use it as a status message you need to pass in only a message:
 
