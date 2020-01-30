@@ -6,7 +6,7 @@ tags: dev-notes
 layout: layouts/post.njk
 ---
 
-Our latest component gives you the ability to communicate timely information with your users. You can notify them about stuff and other stuff. It’s [@tournant/notification].
+Our latest component gives you the ability to communicate timely information with your users. You can notify them about stuff and other stuff. It’s [@tournant/notification](https://www.npmjs.com/package/@tournant/notification).
 
 Let’s write some words about the process of building it and where it is or isn’t useful.
 
@@ -24,9 +24,9 @@ Our notification component knows this and can fit into any situation. In technic
 
 ## What ARIA has to say
 
-You might know that we haven’t invented the term [live region] ourself, but that it is part of the ARIA guidelines. In their terms these regions are «perceivable regions of a web page that are typically updated as a result of an external event when user focus may be elsewhere».
+You might know that we haven’t invented the term [live region](https://www.w3.org/TR/wai-aria-1.1/#dfn-live-region) ourself, but that it is part of the ARIA guidelines. In their terms these regions are «perceivable regions of a web page that are typically updated as a result of an external event when user focus may be elsewhere».
 
-Now, to expand a bit on the roles I have mentioned before. They basically mirror the not-so-important announcement ([status]) or the very-much-so important announcement ([alert]).
+Now, to expand a bit on the roles I have mentioned before. They basically mirror the not-so-important announcement ([status](https://www.w3.org/TR/wai-aria-1.1/#status)) or the very-much-so important announcement ([alert](https://www.w3.org/TR/wai-aria-1.1/#alert)).
 
 Going back to the almost realistic examples from the beginning: Our washing machine being done would be a case of implementing a status message. While the car should be an alert.
 
@@ -40,19 +40,28 @@ We decided to make `status` the default role of the component. Why? Because, as 
 
 To use it as a status message you need to pass in only a message:
 
+```html
 <!-- Input !-->
 <tournant-notification message="Page 4 has been loaded" />
 
 <!-- Output -->
 <div role="status" class="t-ui-alert is-info">Page 4 has been loaded</div>
+```
 
 If you _need_ to announce an alert, e.g. when submitting a form, you can use the `type` prop:
 
+```html
 <!-- Input !-->
-<tournant-notification type="assertive" message="Your e-mail address is invalid" />
+<tournant-notification
+  type="assertive"
+  message="Your e-mail address is invalid"
+/>
 
 <!-- Output -->
-<div role="alert" class="t-ui-alert is-info">The server could not be reached</div>
+<div role="alert" class="t-ui-alert is-info">
+  The server could not be reached
+</div>
+```
 
 ### Message handling
 
@@ -60,13 +69,15 @@ To be clear: This component is only the message. To comply with the ARIA guideli
 
 Let’s suppose you are showing a notification for every item in an array.
 
+```js
 export default {
-data: () => ({
-messages: [  { text: 'Page 1 loaded' }  { text: 'Page 2 loaded' },  { text: 'Page 3 loaded' } ]
-})
+  data: () => ({
+    messages: [   { text: 'Page 1 loaded' }   { text: 'Page 2 loaded' },   { text: 'Page 3 loaded' } ]
+  })
 }
+```
 
-The component will _not_ delete the underlying, it will only become invisible. It will, though, emit a [custom event] once the timer has elapsed. You will have to clean-up your messages once they have become obsolete.
+The component will _not_ delete the underlying, it will only become invisible. It will, though, emit a [custom event](https://vuejs.org/v2/guide/components-custom-events.html) once the timer has elapsed. You will have to clean-up your messages once they have become obsolete.
 
 ### Props
 
