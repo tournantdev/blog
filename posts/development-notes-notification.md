@@ -1,9 +1,13 @@
 ---
 title: "Development Notes: Notification"
-description: "Usage instructions for @tournant/notification."
+description: "A notification about building @tournant/notification."
 date: 2020-01-30
 tags: dev-notes
 layout: layouts/post.njk
+npm:
+  - https://www.npmjs.com/package/@tournant/notification
+github:
+  - https://github.com/tournantdev/ui/tree/master/packages/notification
 ---
 
 Our latest component gives you the ability to communicate timely information with your users. You can notify them about stuff and other stuff. It’s [@tournant/notification](https://www.npmjs.com/package/@tournant/notification).

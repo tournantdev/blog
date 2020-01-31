@@ -424,6 +424,32 @@ pre {
   margin-bottom: var(--space-2);
 }
 
+.component-links {
+  margin-top: var(--space-2);
+}
+
+.icon-link {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  font-variant: all-small-caps;
+  letter-spacing: 0.03em;
+  /* text-decoration: none; */
+  line-height: 1;
+}
+
+.icon-link + .icon-link {
+  margin-left: var(--space-2);
+}
+
+.icon-link__icon {
+  display: inline-block;
+  fill: var(--clr-fg);
+  height: 1rem;
+  margin-right: 0.5rem;
+  width: 1rem;
+}
+
 /* Posts list */
 .postlist {
   list-style: none;
@@ -503,4 +529,15 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+/* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

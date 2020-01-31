@@ -4,6 +4,10 @@ description: "Usage instructions for @tournant/breadcrumb."
 date: 2019-12-05
 tags: dev-notes
 layout: layouts/post.njk
+npm:
+  - https://www.npmjs.com/package/@tournant/breadcrumb
+github:
+  - https://github.com/tournantdev/ui/tree/master/packages/breadcrumb
 ---
 
 Say hello to our latest component: [@tournant/breadcrumb](https://www.npmjs.com/package/@tournant/breadcrumb).
